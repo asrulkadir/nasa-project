@@ -38,3 +38,6 @@ const launchesSchema = new mongoose.Schema({
     default: Date.now,
   },
 });
+
+// Create a new model called "Launch" that uses the launchesSchema.
+module.exports = mongoose.model('Launch', launchesSchema);
